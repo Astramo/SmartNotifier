@@ -29,7 +29,7 @@
 
     }
 
-    }</code></pre>
+    </code></pre>
 
 <p><br />
 &nbsp;&nbsp; &nbsp;</p>
