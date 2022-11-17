@@ -1,12 +1,10 @@
 <h1 style="text-align:center"><strong>Share data without dependencies every where with destination address!</strong></h1>
 
-<h2>usage :&nbsp;</h2>
+<h2>usage</h2>
 
-<h2>init every class that you want receive data and implement the [SmartNotifierObserver]<br />
-&nbsp;</h2>
+<h2>init every class that you want receive data and implement the [SmartNotifierObserver]
+</h2>
 
-<p><br />
-&nbsp;&nbsp; &nbsp;</p>
 
 <pre>class OfflineModeViewModel constructor() : SmartNotifierObserver {
         private val smartNotifier = SmartNotifier.factory()
@@ -31,10 +29,8 @@
 
     </code></pre>
 
-<p><br />
-&nbsp;&nbsp; &nbsp;</p>
 
-<h2><br />
+<h2>
 for push data with class name</h2>
 
 <pre>
@@ -52,8 +48,6 @@ for push data with class name</h2>
         }
     }</code></pre>
 
-<h2>&nbsp;</h2>
-
 <h2>in gradle of app module:</h2>
 
 <pre>
@@ -63,5 +57,3 @@ for push data with class name</h2>
             implementation 'com.github.Astramo:SmartNotifier:version'
     }</code></pre>
 
-<h2><br />
-&nbsp;</h2>
