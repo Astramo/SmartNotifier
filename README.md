@@ -1,4 +1,4 @@
-<h1 style="text-align:center"><strong>Share data witout dependencies every where with destination address!</strong></h1>
+<h1 style="text-align:center"><strong>Share data without dependencies every where with destination address!</strong></h1>
 
 <h2>usage :&nbsp;</h2>
 
