@@ -23,6 +23,10 @@
         override fun onReceivedDate(data: Any?) {
             do something
         }
+        
+        override fun getKey(): SmartNotifierModel {
+                return SmartNotifierModel(this.javaClass.name)
+        }
 
     }</code></pre>
 
