@@ -28,24 +28,6 @@
         }
 
     }
-<code>class OfflineModeViewModel constructor() : SmartNotifierObserver {
-        private val smartNotifier = SmartNotifier.factory()
-
-        init{
-          smartNotifier.subscribe(this)
-        }
-
-        override fun onCleared() {
-            super.onCleared()
-            smartNotifier.removeSubscription(this)
-        }
-        override fun onReceivedDate(data: Any?) {
-            do something
-        }
-        
-        override fun getKey(): SmartNotifierModel {
-                return SmartNotifierModel(this.javaClass.name)
-        }
 
     }</code></pre>
 
