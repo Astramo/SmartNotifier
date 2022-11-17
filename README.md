@@ -2,13 +2,32 @@
 
 <h2>usage :&nbsp;</h2>
 
-<h2>init every class that you want receive data and cast [SmartNotifierObserver]<br />
+<h2>init every class that you want receive data and implement the [SmartNotifierObserver]<br />
 &nbsp;</h2>
 
 <p><br />
 &nbsp;&nbsp; &nbsp;</p>
 
-<pre>
+<pre>class OfflineModeViewModel constructor() : SmartNotifierObserver {
+        private val smartNotifier = SmartNotifier.factory()
+
+        init{
+          smartNotifier.subscribe(this)
+        }
+
+        override fun onCleared() {
+            super.onCleared()
+            smartNotifier.removeSubscription(this)
+        }
+        override fun onReceivedDate(data: Any?) {
+            do something
+        }
+        
+        override fun getKey(): SmartNotifierModel {
+                return SmartNotifierModel(this.javaClass.name)
+        }
+
+    }
 <code>class OfflineModeViewModel constructor() : SmartNotifierObserver {
         private val smartNotifier = SmartNotifier.factory()
 
