@@ -2,23 +2,27 @@
 
 usage : 
 
+<h5>
 init every class that you want receive data and cast [SmartNotifierObserver]
+</h5>
+
 <code>
-class OfflineModeViewModel constructor() : SmartNotifierObserver {
-private val smartNotifier = SmartNotifier.factory()
+	class OfflineModeViewModel constructor() : SmartNotifierObserver {
+		private val smartNotifier = SmartNotifier.factory()
 
-init{
-  smartNotifier.subscribe(this)
-}
+		init{
+		  smartNotifier.subscribe(this)
+		}
 
- override fun onCleared() {
-        super.onCleared()
-        smartNotifier.removeSubscription(this)
-    }
+		override fun onCleared() {
+			super.onCleared()
+			smartNotifier.removeSubscription(this)
+		}
 
 
 
-}</code>
+	}
+</code>
 
 
 for push data with class name
