@@ -20,6 +20,9 @@
             super.onCleared()
             smartNotifier.removeSubscription(this)
         }
+        override fun onReceivedDate(data: Any?) {
+            do something
+        }
 
     }</code></pre>
 
