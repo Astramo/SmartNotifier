@@ -7,6 +7,7 @@ init every class that you want receive data and cast [SmartNotifierObserver]
 </h5>
 
 <code>
+
 	class OfflineModeViewModel constructor() : SmartNotifierObserver {
 		private val smartNotifier = SmartNotifier.factory()
 
@@ -22,16 +23,19 @@ init every class that you want receive data and cast [SmartNotifierObserver]
 
 
 	}
-</code>
+	
+<code>
 
 
 for push data with class name
 
-smartNotifier.publish(
-                    key = SmartNotifierModel(
-                        ChantEventViewModel::class.java.name
-                    ), it
-                )
+<code>
+
+smartNotifier.publish(key = SmartNotifierModel(ChantEventViewModel::class.java.name), data)
+
+</code>
+
+
 
 
 
