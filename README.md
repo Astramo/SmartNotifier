@@ -1,8 +1,9 @@
-Share data witout dependencies every where with destination address!
+<h3>Share data witout dependencies every where with destination address!</h3>
 
 usage : 
 
 init every class that you want receive data and cast [SmartNotifierObserver]
+<code>
 class OfflineModeViewModel constructor() : SmartNotifierObserver {
 private val smartNotifier = SmartNotifier.factory()
 
@@ -17,7 +18,7 @@ init{
 
 
 
-}
+}</code>
 
 
 for push data with class name
