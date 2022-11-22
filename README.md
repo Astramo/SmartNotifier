@@ -34,7 +34,7 @@
 for push data with class name</h2>
 
 <pre>
-<code>smartNotifier.publish(key = SmartNotifierModel(ChantEventViewModel::class.java.name), data)
+<code>smartNotifier.publish(key = SmartNotifierModel(OfflineModeViewModel::class.java.name), data)
 
 </code></pre>
 
